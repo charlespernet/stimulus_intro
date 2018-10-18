@@ -1,9 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Présentation de Overmind
+- Demo serveur  + explication Procfile
+- Explication renommage javascript > frontend
+  Renommage dans webpacker.yml
+  Le css est servi par webpack
 
-Things you may want to cover:
+- Présentation de slim
+
 
 * Ruby version
 
