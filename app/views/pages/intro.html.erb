@@ -1,8 +1,8 @@
 <div data-controller='greetings'>
   <h1>Go Ahead and connect me !</h1>
   <div class='input-inline'>
-    <input type="text" placeholder="What is your name ?">
-    <button>YEAH !</button>
+    <input type="text" placeholder="What is your name ?" data-target='greetings.input'>
+    <button data-action='greetings#greet'>YEAH !</button>
   </div>
-  <p class='message'>" HELLO <span>STIMULUS</span> "</p>
+  <p class='message' data-target="greetings.message">"HELLO STIMULUS"</p>
 </div>

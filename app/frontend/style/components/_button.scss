@@ -9,4 +9,7 @@ button {
   &:hover {
     background: darken(#3AA364, 10%);
   }
+  &:focus {
+    outline: none;
+  }
 }
