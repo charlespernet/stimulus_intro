@@ -1,0 +1,17 @@
+input {
+  border: none;
+  padding: 10px 70px;
+  display: block;
+  border: 0.5px solid #7788994a;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 18px;
+  color: #3AA364;
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-inline {
+  display: flex;
+}
