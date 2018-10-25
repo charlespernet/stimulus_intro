@@ -1,0 +1,11 @@
+.message {
+  font-style: italic;
+  font-size: 24px;
+  color: #3AA364;
+  text-align: right;
+  padding-top: 30px;
+  opacity: 0;
+  &--revealed {
+    opacity: 1;
+  }
+}
