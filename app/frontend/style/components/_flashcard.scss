@@ -1,0 +1,36 @@
+.flashcard {
+  color: white;
+  &-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 150px;
+    background: pink;
+  }
+  &-back {
+    display: none;
+  }
+  &-button {
+    background: blue;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  &-footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &--flipped {
+    .flashcard-front {
+      display: none;
+    }
+
+    .flashcard-back {
+      display: block;
+    }
+
+    .flashcard-body {
+        background: blue;
+    }
+  }
+}
