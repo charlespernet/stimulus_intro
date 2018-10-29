@@ -1,21 +1,26 @@
 # Welcome to this StimulusJS introduction
 
 Four branches are available to follow the demo
-branches : [01-Config, 02-Install, 03-Data, 04-DemoEnd]
+branches :
+  - 01-Config
+  - 02-Install
+  - 03-Data
+  - 04-DemoEnd
 
 Here is what will be set for you on each :
 
 ### 01-Config
-  Rails App with Webpack ready
-    Note : javascript folder renamed frontend
-    Important > rename in webpacker.yml
-  CSS basic
-  pages : [ intro ]
-  TODO : Install Stimulus
+  * Rails App with Webpack ready
+  * CSS basic
+  * **Note :** javascript folder renamed frontend
+  * **Important !** > rename in webpacker.yml
+  
+  **TODO :** Install Stimulus
 
-  steps :
-    yarn add stimulus
-    add this to your application.js
+  **steps :**
+
+  * yarn add stimulus
+  * add this to your application.js
     
  ```javascript
     import { Application } from "stimulus"
@@ -44,11 +49,14 @@ Here is what will be set for you on each :
   doc : https://stimulusjs.org/handbook/installing
 
 ### 02-Install
-  Stimulus installed and connected
-  Action connected to button click event
-  TODO : Connect a controller, build something en using `action` and `target`
-  steps :
-  Add `data-controller` `data-action` and `data-target`
+  * Stimulus installed and connected
+  * Action connected to button click event
+  
+  **TODO :** Connect a controller, build something en using `action` and `target`
+  
+**steps :**
+
+* Add `data-controller` `data-action` and `data-target`
 
 ```html
   <div data-controller='greetings'>
@@ -83,11 +91,14 @@ export default class extends Controller {
 ```
 
 ### 03-Data
-  Let's play with data
-  TODO : Give data from rails Controller, and use it in Stimulus
-  steps :
-    Add data-greetings-name
-    Add getter and setter to your Controller
+  * Let's play with data
+  
+  **TODO :** Give data from rails Controller, and use it in Stimulus
+  
+  **steps :**
+  
+  * Add data-greetings-name
+  * Add getter and setter to your Controller
 
   it now looks like this :
 
@@ -110,8 +121,8 @@ set name(value) {
 ```
 
 ### 04-DemoEnd
-  Let's talk about Turbolink's caching
-  Then let's see another example with 2 controllers on same page
-  The index is persisted in DOM so on next reload you'll be on the right slide !
+  * Let's talk about Turbolink's caching
+  * Then let's see another example with 2 controllers on same page
+  * The index is persisted in DOM so on next reload you'll be on the right slide !
 
 Slides : https://docs.google.com/presentation/d/117M7fWZr8s_u8G2YqHIP6BntIF6MeyoxnXUnoTctaec/edit?usp=sharing
