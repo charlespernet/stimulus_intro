@@ -1,19 +1,27 @@
 .flashcard {
   color: white;
+  display: none;
   &-body {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 100px 150px;
     background: pink;
+    min-width: 160px;
   }
   &-back {
     display: none;
   }
   &-button {
-    background: blue;
+    background: white;
     border-radius: 20px;
     margin: 0 auto;
+    color: pink;
+    font-weight: bold;
+    &:hover {
+      background: white;
+      color: pink;
+    }
   }
   &-footer {
     padding: 20px;
@@ -21,16 +29,19 @@
     justify-content: space-around;
   }
   &--flipped {
-    .flashcard-front {
-      display: none;
+    .flashcard {
+      &-front {
+        display: none;
+      }
+      &-back {
+        display: block;
+      }
+      &-body {
+        background: #ACE1FD;
+      }
     }
-
-    .flashcard-back {
-      display: block;
-    }
-
-    .flashcard-body {
-        background: blue;
-    }
+  }
+  &--current {
+    display: block;
   }
 }

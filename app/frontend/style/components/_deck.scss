@@ -1,0 +1,17 @@
+.deck {
+  &-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &-button {
+    border-radius: 5px;
+    padding: 108px 25px;
+    background: transparent;
+    color: black;
+    margin: 0 10px;
+    &:hover {
+      background: lightgrey;
+    }
+  }
+}

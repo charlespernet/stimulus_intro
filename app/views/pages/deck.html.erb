@@ -1,8 +1,12 @@
-<div class='deck' data-controller='' data-deck-index="0">
+<div class='deck' data-controller='deck' data-deck-index="0">
   <h1>Go Ahead and flip me !</h1>
-  <%# <button data-action='deck#previous'><-</button> %>
-  <article>
-    <%= render 'flashcard', number: 1 %>
-  </article>
-  <%# <button data-action='deck#next'>-></button> %>
+  <div class="deck-body">
+    <button class='deck-button' data-action='deck#previous'><-</button>
+    <article>
+      <% (1..6).each do |num| %>
+        <%= render 'flashcard', number: num %>
+      <% end %>
+    </article>
+    <button class='deck-button' data-action='deck#next'>-></button>
+  </div>
 </div>

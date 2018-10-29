@@ -9,16 +9,20 @@ export default class extends Controller {
 
   showCard() {
     this.cardTargets.forEach((el, i) => {
-      el.classList.toggle("card--curent", this.index == i)
+      el.classList.toggle("flashcard--current", this.index == i)
     })
   }
 
   next() {
-    this.index++
+    if (this.index < 5 ) {
+      this.index++
+    }
   }
 
   previous() {
-    this.index--
+    if (this.index > 0 ) {
+      this.index--
+    }
   }
 
   get index() {
