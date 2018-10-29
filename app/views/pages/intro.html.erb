@@ -1,8 +1,13 @@
-<div data-controller='greetings'>
+<div data-controller='greetings' data-greetings-name="<%= @user.name %>">
   <h1>Go Ahead and connect me !</h1>
   <div class='input-inline'>
     <input type="text" placeholder="What is your name ?" data-target='greetings.input'>
     <button data-action='greetings#greet'>YEAH !</button>
   </div>
-  <p class='message' data-target="greetings.message">"HELLO STIMULUS"</p>
+  <p
+    class='message'
+    data-target="greetings.message"
+  >
+    "HELLO STIMULUS"
+  </p>
 </div>

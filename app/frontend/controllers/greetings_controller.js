@@ -9,8 +9,17 @@ export default class extends Controller {
 
   greet() {
     console.log('Oh you want the greet ?')
-    const name = this.inputTarget.value || 'BoGossDu91'
+    const name = this.inputTarget.value || this.name
+    this.name = name
     this.messageTarget.innerText = `"Welcome ${name}"`
     this.messageTarget.classList.add('message--revealed')
+  }
+
+  get name() {
+    return this.data.get('name')
+  }
+
+  set name(value) {
+    this.data.set('name', value)
   }
 }
