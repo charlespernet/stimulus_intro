@@ -114,4 +114,4 @@ set name(value) {
   Then let's see another example with 2 controllers on same page
   The index is persisted in DOM so on next reload you'll be on the right slide !
 
-Slides : https://docs.google.com/presentation/d/117M7fWZr8s_u8G2YqHIP6BntIF6MeyoxnXUnoTctaec/edit#slide=id.g465e61461d_1_1  
+Slides : https://docs.google.com/presentation/d/117M7fWZr8s_u8G2YqHIP6BntIF6MeyoxnXUnoTctaec/edit?usp=sharing
