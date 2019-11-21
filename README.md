@@ -125,4 +125,9 @@ set name(value) {
   * Then let's see another example with 2 controllers on same page
   * The index is persisted in DOM so on next reload you'll be on the right slide !
 
-Slides : https://docs.google.com/presentation/d/117M7fWZr8s_u8G2YqHIP6BntIF6MeyoxnXUnoTctaec/edit?usp=sharing
+### More 
+  * Slides from talk : https://docs.google.com/presentation/d/117M7fWZr8s_u8G2YqHIP6BntIF6MeyoxnXUnoTctaec/edit?usp=sharing
+  * Stimulus doc : https://stimulusjs.org/handbook/introduction
+  * Another resource by LeWagon : https://kitt.lewagon.com/knowledge/tutorials/stimulus_intro
+  * Wesbos JS30 refactored with Stimulus : https://github.com/adrienpoly/javascript30-stimulus
+
