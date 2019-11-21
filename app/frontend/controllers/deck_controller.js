@@ -14,13 +14,13 @@ export default class extends Controller {
   }
 
   next() {
-    if (this.index < 5 ) {
+    if (this.index < 5) {
       this.index++
     }
   }
 
   previous() {
-    if (this.index > 0 ) {
+    if (this.index > 0) {
       this.index--
     }
   }
